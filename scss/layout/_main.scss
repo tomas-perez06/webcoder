@@ -1,0 +1,36 @@
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-color {
+  background-color: var(--color-principal);
+}
+
+.text-color-secundario {
+  color: var(--color-claro);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.mt-5 {
+  h2 {
+    padding: 3%;
+  }
+
+  p {
+    text-align: center;
+  }
+}

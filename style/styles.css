@@ -1,0 +1,262 @@
+@charset "UTF-8";
+:root {
+  --color-principal: #2b2d42;
+  --color-secundario: #ef233c;
+  --color-claro: #edf2f4;
+  --color-gris: #8d99ae;
+  --color-fondo: #e0e1dd;
+  --color-texto-principal: #333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--color-texto-principal);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--color-principal);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-claro);
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--color-gris);
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.btn-color-secundario {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-color-secundario:hover {
+  background-color: #d90429;
+}
+
+.centrar-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.fondo-banner,
+#banner-menu,
+#banner-ubicacion,
+#banner-reserva,
+#banner-galeria {
+  background-color: var(--color-gris);
+  color: var(--color-claro);
+  padding: 30px;
+  text-align: center;
+  height: auto;
+}
+.fondo-banner p,
+#banner-menu p,
+#banner-ubicacion p,
+#banner-reserva p,
+#banner-galeria p {
+  text-align: center;
+  color: var(--color-claro);
+}
+.fondo-banner h1, .fondo-banner p,
+#banner-menu h1,
+#banner-menu p,
+#banner-ubicacion h1,
+#banner-ubicacion p,
+#banner-reserva h1,
+#banner-reserva p,
+#banner-galeria h1,
+#banner-galeria p {
+  text-align: center;
+  color: var(--color-claro);
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.carousel-caption p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.carousel-ajustado .carousel-item {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.carousel-ajustado .carousel-item img {
+  object-fit: contain;
+  max-height: 100%;
+  width: auto;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-color {
+  background-color: var(--color-principal);
+}
+
+.text-color-secundario {
+  color: var(--color-claro);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.mt-5 h2 {
+  padding: 3%;
+}
+.mt-5 p {
+  text-align: center;
+}
+
+/* Estilos Generales */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; /* Tamaño de fuente general */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Media Queries */
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.95rem; /* Ajusta el tamaño de la fuente */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+  .carousel-caption p {
+    font-size: 0.95rem;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .btn {
+    padding: 0.7rem 1rem;
+  }
+}
+/* Para dispositivos tipo tablet (de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
+  }
+  h1 {
+    font-size: 2.2rem; /* Ajusta el tamaño de los encabezados */
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1.75rem; /* Ajusta el tamaño del subtítulo */
+  }
+  .carousel-caption p {
+    font-size: 1.1rem; /* Ajusta el tamaño del texto */
+  }
+  .navbar-brand {
+    font-size: 1.5rem; /* Ajusta el tamaño del nombre de la marca en la barra de navegación */
+  }
+  .btn {
+    padding: 0.8rem 1.2rem; /* Ajusta el tamaño de los botones */
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
