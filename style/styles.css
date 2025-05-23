@@ -420,39 +420,6 @@ footer a {
   color: #666;
 }
 
-.reserva-container {
-  background-color: #fffefc;
-  border: 1px solid #e9ecef;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-  padding: 2.5rem;
-}
-.reserva-container h2 {
-  font-weight: 700;
-  color: #3e3e3e;
-}
-.reserva-container p {
-  font-size: 1.1rem;
-  color: #666;
-}
-.reserva-container label {
-  font-weight: 500;
-  color: #333;
-}
-.reserva-container .form-control {
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-.reserva-container button {
-  border-radius: 10px;
-  font-weight: 600;
-  background-color: var(--color-secundario);
-  border: none;
-}
-.reserva-container button:hover {
-  background-color: var(--color-secundario);
-}
-
 .carousel-inner img {
   height: auto;
   max-height: 500px;
