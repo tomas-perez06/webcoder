@@ -1,4 +1,4 @@
-# Nombre del Proyecto
+# Restaurante Delicioso
 
 Sitio web desarrollado con **HTML**, **CSS**, **SCSS** y **Bootstrap 5**.
 
