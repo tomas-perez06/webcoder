@@ -1,0 +1,22 @@
+.fondo-banner,
+#banner-menu,
+#banner-ubicacion,
+#banner-reserva,
+#banner-galeria {
+  background-color: var(--color-gris);
+  color: var(--color-claro);
+  padding: 30px;
+  text-align: center;
+  height: auto;
+
+  p {
+    text-align: center;
+    color: var(--color-claro);
+  }
+
+  h1, p {
+    text-align: center;
+    color: var(--color-claro);
+  }
+}
+

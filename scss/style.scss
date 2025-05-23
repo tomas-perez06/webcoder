@@ -1,0 +1,112 @@
+
+@use "base/variables";
+@use "base/typography";
+@use "components/buttons";
+@use "components/banner";
+@use "components/carousel";
+@use "layout/main";
+@use "components/menu";
+@use "components/ubicacion.scss";
+@use "components/reserva";
+@use "components/galeria";
+
+/* Estilos Generales */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;  /* Tamaño de fuente general */
+  line-height: 1.6;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.95rem;  /* Ajusta el tamaño de la fuente */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .carousel-caption {
+    h5 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1rem;
+  }
+}
+
+/* Para dispositivos tipo tablet (de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1rem;  /* Ajusta el tamaño de la fuente */
+  }
+
+  h1 {
+    font-size: 2.2rem;  /* Ajusta el tamaño de los encabezados */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption {
+    h5 {
+      font-size: 1.75rem;  /* Ajusta el tamaño del subtítulo */
+    }
+
+    p {
+      font-size: 1.1rem;  /* Ajusta el tamaño del texto */
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;  /* Ajusta el tamaño del nombre de la marca en la barra de navegación */
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;  /* Ajusta el tamaño de los botones */
+  }
+}

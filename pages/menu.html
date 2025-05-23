@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explora nuestro menú variado con platos frescos y deliciosos que te harán querer volver. Reserva tu mesa hoy mismo.">
+    <title>Restaurante Delicioso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="../style/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg nav-color text-color-secundario">
+        <div class="container">
+            <a class="navbar-brand text-color-secundario" href="../index.html">Restaurante Delicioso</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-color-secundario" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-secundario" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-secundario" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-secundario" href="galeria.html">Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Banner -->
+    <section id="banner-menu" class="fondo-banner py-5">
+        <h1 class="container mt-5 menu-section">Menú</h1>
+        <p class="container mt-5 menu-section">¡Sabores que enamoran, tradición que perdura!</p>
+    </section>
+
+    <!-- Menú de platos -->
+<section class="container mt-5 menu-section">
+    <h2 class="mb-3 text-center menu-title">Menú</h2>
+    <p class="text-center menu-subtitle menu-title">Descubre nuestros platos más populares:</p>
+
+    <ul class="list-group shadow-sm">
+
+    <li class="list-group-item">
+        <input type="checkbox" id="plato1" class="accordion-toggle" />
+            <label for="plato1" class="accordion-header">🍽️ Plato del Día</label>
+        <ul class="submenu">
+        <li>Pollo al ajillo</li>
+        <li>Filete de merluza</li>
+        <li>Arroz con verduras</li>
+        </ul>
+    </li>
+
+    <li class="list-group-item">
+        <input type="checkbox" id="plato2" class="accordion-toggle" />
+        <label for="plato2" class="accordion-header">🥗 Ensaladas Frescas</label>
+        <ul class="submenu">
+        <li>Ensalada César</li>
+        <li>Ensalada Caprese</li>
+        <li>Ensalada Griega</li>
+        </ul>
+    </li>
+
+    <li class="list-group-item">
+        <input type="checkbox" id="plato3" class="accordion-toggle" />
+        <label for="plato3" class="accordion-header">🍕 Pizzas Artesanales</label>
+        <ul class="submenu">
+        <li>Margarita</li>
+        <li>Cuatro quesos</li>
+        <li>Pepperoni</li>
+        </ul>
+    </li>
+
+    <li class="list-group-item">
+        <input type="checkbox" id="plato4" class="accordion-toggle" />
+        <label for="plato4" class="accordion-header">🍖 Carnes a la Parrilla</label>
+        <ul class="submenu">
+        <li>Asado de tira</li>
+        <li>Chorizo criollo</li>
+        <li>Vacío</li>
+        </ul>
+    </li>
+
+    <li class="list-group-item">
+        <input type="checkbox" id="plato5" class="accordion-toggle" />
+        <label for="plato5" class="accordion-header">🍰 Postres Caseros</label>
+        <ul class="submenu">
+        <li>Flan con dulce de leche</li>
+        <li>Tiramisú</li>
+        <li>Brownie de chocolate</li>
+        </ul>
+    </li>
+
+    </ul>
+</section>
+
+
+    <!-- Reserva -->
+    <section class="container mt-5">
+        <h2 class="mb-3 text-center">Haz tu Reserva</h2>
+        <p class="text-center">Reserva tu mesa y disfruta de una experiencia gastronómica única.</p>
+        <div class="centrar-boton">
+                            <a href="pages/reservas.html" class="btn btn-color-secundario mt-2 animate__animated animate__pulse animate__infinite">Reservar Ahora</a>
+
+        </div>
+    </section>
+
+    <!-- Mapa de ubicación -->
+<section class="mt-5 animate__animated animate__fadeInUp animate__delay-0.5s">
+    <h2>¿Dónde estamos?</h2>
+    <div class="container">
+        <div class="ratio ratio-16x9 mb-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7343780.562864803!2d25.305345451251537!3d-77.01556676990248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1742909089354!5m2!1ses-419!2sar"
+                allowfullscreen=""
+                loading="lazy"
+                class="animate__animated animate__fadeIn"
+            ></iframe>
+        </div>
+    </div>
+    <p>Visítanos en el corazón de la Antártida y vive la mejor experiencia culinaria.</p>
+</section>
+
+
+</main>
+
+<footer class="nav-color text-color-secundario text-center py-4 mt-5 animate__animated animate__fadeInUp">
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-color-secundario" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-color-secundario" href="reservas.html">Reservas</a></li>
+            <li class="nav-item"><a class="nav-link text-color-secundario" href="ubicacion.html">Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link text-color-secundario" href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+    <p class="mt-3">2025 Restaurante Delicioso. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
